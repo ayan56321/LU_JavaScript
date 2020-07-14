@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <h1>Current Date in day-time Format</h1>
+    
+        <body>
+           <!-- <button type="button" onclick="document.getElementById('sample').innerHTML=Date()">
+                Click Me Please to Display
+           </button> -->
+           <p id="sample">A Paragraph</p>
+           <script>            
+            var dt = new Date();
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        document.getElementById('sample').innerHTML="Today is : "+days[dt.getDay()] + 
+        " Time is "+dt.getHours()+" : "+dt.getMinutes()+" : "+dt.getSeconds();
+        </script>
+        
+
+        </body>
+    </head>
+</html>

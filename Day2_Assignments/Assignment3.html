@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <h1>Current Date in mm-dd-yy/mm/dd/yyyy Format</h1>
+    
+        <body>
+           <!-- <button type="button" onclick="document.getElementById('sample').innerHTML=Date()">
+                Click Me Please to Display
+           </button> -->
+           <p id="sample">A Paragraph</p>
+           <p id="data">A Paragraph</p>
+           <p id="data1">A Paragraph</p>
+           <p id="data2">A Paragraph</p>
+
+           <script>            
+            var dt = new Date();
+
+            var dd = dt.getDate();
+            var mm = dt.getMonth()+1; 
+            var yyyy = dt.getFullYear();
+            if(dd<10) 
+            {
+                dd='0'+dd;
+            } 
+
+            if(mm<10) 
+            {
+                mm='0'+mm;
+            } 
+            today = mm+'-'+dd+'-'+yyyy;
+            today1 = mm+'/'+dd+'/'+yyyy;
+            today2 = dd+'-'+mm+'-'+yyyy;
+            today3 = dd+'/'+mm+'/'+yyyy;
+
+    
+           document.getElementById('sample').innerHTML="Today is : "+today;
+           document.getElementById('data').innerHTML="Today is : "+today1;
+           document.getElementById('data1').innerHTML="Today is : "+today2;
+           document.getElementById('data2').innerHTML="Today is : "+today3;
+
+        </script>
+        
+
+        </body>
+    </head>
+</html>
